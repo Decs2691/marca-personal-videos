@@ -13,20 +13,20 @@ const cards: Omit<HookCardProps, "total">[] = [
   {
     index: 1,
     name: "Negativo",
-    bad: "Hoy te hablo de perros",
-    good: "Estás bañando mal a tu perro.",
+    bad: "Consejos para emprendedores",
+    good: "Publicar todos los días no te va a dar clientes.",
   },
   {
     index: 2,
     name: "Pregunta no obvia",
-    bad: "¿Sabías que los carros se devalúan?",
-    good: "¿Por qué algunos carros mantienen su valor y otros no?",
+    bad: "¿Sabías que debes publicar a diario?",
+    good: "¿Qué tienen en común las cuentas que venden todos los días?",
   },
   {
     index: 3,
     name: "Curiosidad",
-    bad: "Tips de decoración",
-    good: "Hay un detalle en las casas modernas que casi nadie nota.",
+    bad: "Tips para tu negocio",
+    good: "Hay un error en tu bio que casi ningún dueño de negocio nota.",
   },
 ];
 
