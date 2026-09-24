@@ -33,10 +33,12 @@ export const FPS = 30;
 export const WIDTH = 1080;
 export const HEIGHT = 1920;
 
-// Zona segura: la UI de IG/TikTok tapa el 15% inferior y la franja derecha.
+// Zona segura: la UI de IG/TikTok tapa arriba (pestañas), abajo (usuario,
+// caption, audio) y la franja derecha (botones). Mismos valores que
+// components/SafeZoneOverlay; el contenido se centra dentro de este margen.
 export const safe = {
-  top: 200,
+  top: 220,
   left: 88,
   right: 180,
-  bottom: 360,
+  bottom: 480,
 };

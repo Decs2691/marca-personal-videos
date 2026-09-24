@@ -39,7 +39,7 @@ Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en 
 ## Reglas de diseño
 - Fondo crema `#F5F3EF` o negro `#000000`.
 - El turquesa `#2EC4B6` y el durazno `#F4A261` se usan como **bloque detrás de texto negro**. Nunca como color de texto sobre crema, porque no se lee (contraste ~2:1). Sobre negro sí pueden ser texto.
-- Deja libres el 15% inferior y la franja derecha de la pantalla (ahí está la interfaz de IG y TikTok).
+- Respeta la zona segura: 220 px arriba, 480 px abajo y 140 px a la derecha (ahí está la interfaz de IG y TikTok). En `npm run studio`, la composición `Reel01Hooks-ZonasUI` muestra esas zonas en rojo para revisarlas.
 - Usa cortes secos: sin zooms, sin emojis y sin subtítulos palabra por palabra.
 
 ## Licencia de Remotion

@@ -122,9 +122,9 @@ const CloseScene: React.FC = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(5, 120px)",
-          gap: 20,
-          marginBottom: 80,
+          gridTemplateColumns: "repeat(5, 104px)",
+          gap: 18,
+          marginBottom: 64,
         }}
       >
         {Array.from({ length: TOTAL_TYPES }, (_, i) => {
@@ -134,7 +134,7 @@ const CloseScene: React.FC = () => {
             <div
               key={i}
               style={{
-                height: 120,
+                height: 104,
                 opacity: appear,
                 backgroundColor: done ? colors.teal : "transparent",
                 border: `3px solid ${done ? colors.teal : "rgba(245,243,239,0.25)"}`,
