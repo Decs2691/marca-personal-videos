@@ -32,7 +32,7 @@ Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en 
 
 ## Estructura
 - `src/theme.ts`: paleta, fuentes y zona segura. Todos los reels la reutilizan.
-- `src/components/`: piezas reutilizables (`HookCard`, `Mark`, `Countdown`, `Scene`).
+- `src/components/`: piezas reutilizables (`HookCard`, `Mark`, `Countdown`, `Scene`, `Typewriter`).
 - `src/reels/`: un archivo por reel.
 - `public/fonts/`: Fraunces y Space Grotesk (Google Fonts, licencia OFL). Van incluidas para que el render funcione sin internet.
 

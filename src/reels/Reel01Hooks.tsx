@@ -4,6 +4,7 @@ import { Countdown } from "../components/Countdown";
 import { HookCard, HookCardProps } from "../components/HookCard";
 import { Mark } from "../components/Mark";
 import { Scene } from "../components/Scene";
+import { Typewriter } from "../components/Typewriter";
 import { enter, sweep } from "../components/anim";
 import { colors, fonts } from "../theme";
 
@@ -166,9 +167,22 @@ const CloseScene: React.FC = () => {
         <CommentBubble />
         <div>
           <div style={{ ...headline, fontSize: 96, color: colors.teal }}>
-            Comenta “2”
+            <Typewriter
+              text="Comenta “2”"
+              start={78}
+              framesPerChar={3}
+              cursorColor={colors.teal}
+            />
           </div>
-          <div style={{ ...body, marginTop: 8 }}>y hago la parte 2.</div>
+          <div style={{ ...body, marginTop: 8 }}>
+            <Typewriter
+              text="y hago la parte 2."
+              start={78 + 11 * 3 + 6}
+              framesPerChar={2}
+              cursorColor={colors.cream}
+              keepCursor
+            />
+          </div>
         </div>
       </div>
     </Scene>
