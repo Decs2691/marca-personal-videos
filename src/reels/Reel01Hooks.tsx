@@ -32,12 +32,11 @@ const cards: Omit<HookCardProps, "total">[] = [
 
 // Duraciones en frames (30 fps).
 const HOOK = 90;
-const CTA = 60;
 const DEFINITION = 150;
 const CARD = 190;
-const CLOSE = 180;
+const CLOSE = 210;
 export const REEL01_DURATION =
-  HOOK + CTA + DEFINITION + CARD * cards.length + CLOSE;
+  HOOK + DEFINITION + CARD * cards.length + CLOSE;
 
 const headline: React.CSSProperties = {
   fontFamily: fonts.serif,
@@ -64,46 +63,6 @@ const HookScene: React.FC = () => (
     </div>
   </Scene>
 );
-
-const Bookmark: React.FC<{ fill: number }> = ({ fill }) => (
-  <svg width="120" height="156" viewBox="0 0 40 52" style={{ marginBottom: 48 }}>
-    <defs>
-      <clipPath id="bm">
-        <path d="M2 2h36v48L20 38 2 50z" />
-      </clipPath>
-    </defs>
-    <rect
-      clipPath="url(#bm)"
-      x="0"
-      y={52 - 52 * fill}
-      width="40"
-      height="52"
-      fill={colors.teal}
-    />
-    <path
-      d="M2 2h36v48L20 38 2 50z"
-      fill="none"
-      stroke={colors.ink}
-      strokeWidth="3"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const CtaScene: React.FC = () => {
-  const frame = useCurrentFrame();
-  return (
-    <Scene bg="cream">
-      <div style={enter(frame, 0)}>
-        <Bookmark fill={sweep(frame, 4, 14)} />
-      </div>
-      <div style={{ ...headline, ...enter(frame, 2) }}>Guárdalo.</div>
-      <div style={{ ...body, ...enter(frame, 10), marginTop: 24 }}>
-        Lo vas a necesitar cuando grabes.
-      </div>
-    </Scene>
-  );
-};
 
 const DefinitionScene: React.FC = () => {
   const frame = useCurrentFrame();
@@ -134,6 +93,26 @@ const DefinitionScene: React.FC = () => {
     </Scene>
   );
 };
+
+const CommentBubble: React.FC = () => (
+  <svg width="150" height="140" viewBox="0 0 60 56">
+    <path
+      d="M6 4h48a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3H24L12 52V40H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z"
+      fill={colors.teal}
+    />
+    <text
+      x="30"
+      y="31"
+      textAnchor="middle"
+      fontFamily={fonts.serif}
+      fontWeight={600}
+      fontSize="26"
+      fill={colors.ink}
+    >
+      2
+    </text>
+  </svg>
+);
 
 const CloseScene: React.FC = () => {
   const frame = useCurrentFrame();
@@ -177,15 +156,20 @@ const CloseScene: React.FC = () => {
       </div>
       <div
         style={{
-          ...headline,
-          ...enter(frame, 66),
-          fontSize: 92,
-          color: colors.teal,
-          marginTop: 28,
-          whiteSpace: "nowrap",
+          ...enter(frame, 70),
+          display: "flex",
+          alignItems: "center",
+          gap: 40,
+          marginTop: 64,
         }}
       >
-        Parte 2 → 3 más
+        <CommentBubble />
+        <div>
+          <div style={{ ...headline, fontSize: 96, color: colors.teal }}>
+            Comenta “2”
+          </div>
+          <div style={{ ...body, marginTop: 8 }}>y hago la parte 2.</div>
+        </div>
       </div>
     </Scene>
   );
@@ -203,9 +187,6 @@ export const Reel01Hooks: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: colors.ink }}>
       <Sequence {...next(HOOK)}>
         <HookScene />
-      </Sequence>
-      <Sequence {...next(CTA)}>
-        <CtaScene />
       </Sequence>
       <Sequence {...next(DEFINITION)}>
         <DefinitionScene />

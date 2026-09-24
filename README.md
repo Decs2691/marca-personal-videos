@@ -5,7 +5,7 @@ Reels para IG y TikTok hechos con código ([Remotion](https://www.remotion.dev))
 ## Reels
 | ID | Tema | Duración |
 |---|---|---|
-| `Reel01Hooks` | Qué es un hook + 3 tipos (01–03 de 20) | 35 s, 1080×1920 |
+| `Reel01Hooks` | Qué es un hook + 3 tipos (01–03 de 20) | 34 s, 1080×1920 |
 
 ## Cómo generarlo en tu Mac (solo la primera vez: pasos 1–3)
 1. Instala Node.js LTS desde https://nodejs.org (el instalador .pkg), o con `brew install node` si usas Homebrew.
@@ -28,7 +28,7 @@ Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en 
 
 ## Antes de publicar
 - El video sale **sin música**, a propósito. Añade un audio en tendencia desde la app de IG o TikTok. Así evitas problemas de derechos de autor.
-- **CTA:** el video pide guardarlo (escena 2). No pidas like, comentario y seguir a la vez en el copy.
+- **CTA:** el video termina con "Comenta 2 y hago la parte 2". En el copy no pidas otra acción (guardar, seguir…): un solo CTA por video.
 
 ## Estructura
 - `src/theme.ts`: paleta, fuentes y zona segura. Todos los reels la reutilizan.
