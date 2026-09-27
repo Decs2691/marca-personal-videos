@@ -4,8 +4,8 @@ import { FPS, fonts } from "../../theme";
 import { lines } from "./timing";
 
 // Combinación tipográfica: la frase en serif clásica (Cormorant Garamond) y la
-// palabra clave en mayúsculas geométricas espaciadas (Montserrat), que entra
-// justo cuando la dices. Blanco + amarillo sobrio, borde suave y sombra difusa.
+// palabra clave en mayúsculas geométricas espaciadas (Montserrat), que se
+// enciende justo cuando la dices. Blanco + amarillo sobrio, borde suave y sombra difusa.
 const SOFT_YELLOW = "#F3E2A0";
 // Orden = prioridad cuando una línea tiene varias candidatas.
 const KEYWORDS = [
@@ -73,9 +73,11 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
             </React.Fragment>
           );
         }
-        // La clave aparece en el instante en que la pronuncias.
+        // La clave está desde el inicio de la línea y se "enciende" (amarillo +
+        // golpe) en el instante en que la pronuncias; así no quedan huecos.
         const k = frame - Math.round(w.t * FPS);
-        const p = interpolate(k, [-2, 5], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        const lit = k >= -1;
+        const pop = interpolate(k, [-1, 2, 6], [1, 1.14, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
         const trailing = w.w.match(/[.,:;—…?!]+$/)?.[0] ?? "";
         const leading = w.w.match(/^[¿¡]+/)?.[0] ?? "";
         const word = w.w.slice(leading.length, w.w.length - trailing.length);
@@ -90,10 +92,9 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
                 letterSpacing: "0.16em",
                 marginRight: "-0.16em",
                 textTransform: "uppercase",
-                color: SOFT_YELLOW,
+                color: lit ? SOFT_YELLOW : "#FFFFFF",
                 WebkitTextStroke: `${hook ? 5 : 4}px rgba(0,0,0,0.55)`,
-                opacity: p,
-                transform: `scale(${1.18 - 0.18 * p})`,
+                transform: `scale(${pop})`,
                 verticalAlign: "0.06em",
               }}
             >
