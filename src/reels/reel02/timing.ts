@@ -1,8 +1,19 @@
 import subs from "../reel02-subs.json";
 import { FPS } from "../../theme";
 
-export type SubLine = { text: string; start: number; end: number };
-export const lines: SubLine[] = subs.lines;
+export type SubWord = { w: string; t: number };
+export type SubLine = { text: string; start: number; end: number; words: SubWord[] };
+
+// Cada línea con los tiempos de sus palabras (las palabras van en orden).
+export const lines: SubLine[] = (() => {
+  let k = 0;
+  return subs.lines.map((l) => {
+    const n = l.text.split(" ").length;
+    const words = subs.words.slice(k, k + n);
+    k += n;
+    return { ...l, words };
+  });
+})();
 
 // Momento (en frames) en que se dice `word`, buscando desde `after` segundos.
 // Los tiempos vienen de tools/align.py; si una animación va desfasada,

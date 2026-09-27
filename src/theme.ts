@@ -16,12 +16,30 @@ export const colors = {
 export const fonts = {
   serif: "Fraunces",
   sans: "Space Grotesk",
+  // Subtítulos del reel 02: serif clásica + mayúsculas geométricas espaciadas.
+  classic: "Cormorant Garamond",
+  display: "Montserrat",
 };
 
 loadFont({
   family: fonts.serif,
   url: staticFile("fonts/fraunces.woff2"),
   weight: "100 900",
+});
+loadFont({
+  family: fonts.display,
+  url: staticFile("fonts/montserrat.woff2"),
+  weight: "100 900",
+});
+loadFont({
+  family: fonts.classic,
+  url: staticFile("fonts/cormorant-600.woff2"),
+  weight: "600",
+});
+loadFont({
+  family: fonts.classic,
+  url: staticFile("fonts/cormorant-700.woff2"),
+  weight: "700",
 });
 loadFont({
   family: fonts.sans,
