@@ -5,7 +5,7 @@ import { lines } from "./timing";
 
 // Combinación tipográfica: la frase en serif clásica (Cormorant Garamond) y la
 // palabra clave en mayúsculas geométricas espaciadas (Montserrat), que entra
-// justo cuando la dices. Blanco + amarillo sobrio, contorno negro fino.
+// justo cuando la dices. Blanco + amarillo sobrio, borde suave y sombra difusa.
 const SOFT_YELLOW = "#F3E2A0";
 // Orden = prioridad cuando una línea tiene varias candidatas.
 const KEYWORDS = [
@@ -51,7 +51,8 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
         lineHeight: 1.05,
         color: "#FFFFFF",
         paintOrder: "stroke fill",
-        textShadow: "0 6px 18px rgba(0,0,0,0.4)",
+        // Borde fino y suave + sombra difusa: se lee sin verse "recortado".
+        textShadow: "0 2px 6px rgba(0,0,0,0.45), 0 0 22px rgba(0,0,0,0.35)",
       }}
     >
       {line.words.map((w, i) => {
@@ -64,7 +65,7 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
                   fontFamily: fonts.classic,
                   fontWeight: 700,
                   fontSize: serifSize,
-                  WebkitTextStroke: `${hook ? 11 : 9}px #000`,
+                  WebkitTextStroke: `${hook ? 5 : 4}px rgba(0,0,0,0.55)`,
                 }}
               >
                 {w.w}
@@ -90,7 +91,7 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
                 marginRight: "-0.16em",
                 textTransform: "uppercase",
                 color: SOFT_YELLOW,
-                WebkitTextStroke: `${hook ? 10 : 8}px #000`,
+                WebkitTextStroke: `${hook ? 5 : 4}px rgba(0,0,0,0.55)`,
                 opacity: p,
                 transform: `scale(${1.18 - 0.18 * p})`,
                 verticalAlign: "0.06em",
