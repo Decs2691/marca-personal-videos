@@ -21,49 +21,54 @@ const T = {
   bonusIntro: at("bonus"),
   card: at("aprovecha") - 12,
   primero: at("primero"),
+  codigo: at("código"),
   random: at("random"),
   segundo: at("segundo"),
-  cara: at("cara"),
+  clara: at("clara"),
   logo: at("logo"),
+  cara: at("cara"),
   tercero: at("tercero"),
   haces: at("haces"),
   resultados: at("resultados"),
-  ahora: at("ahora"),
-  bonus: at("bonus", 29),
-  quien: at("quién"),
-  hago: at("hago", 31),
-  testimonios: at("testimonios"),
-  contactarte: at("contactarte"),
+  ahora: at("y", 29.8),
+  contacto: at("pon", 30.5),
   dm: at("dm"),
   whatsapp: at("whatsapp"),
   web: at("web"),
+  bonus: at("bonus", 37),
+  quien: at("quién"),
+  hago: at("hago", 40),
+  testimonios: at("testimonios"),
   cuando: at("cuando"),
-  segundos: at("segundos"),
+  entender: at("entender"),
   despues: at("después"),
-  noTeDigo: at("no", 45),
-  teDigo: at("te", 46.4),
-  cambiar: at("cambiar"),
+  noTeDigo: at("no", 46),
+  teDigo: at("te", 47.5),
   sigueme: at("sígueme"),
   perder: at("perder"),
 };
 
-type Focus = "username" | "avatar" | "bio" | "highlights" | null;
+const LEAD = 4;
+
+type Focus = "username" | "avatar" | "bio" | "contact" | "highlights" | null;
 
 const focusAt = (f: number): Focus => {
-  if (f >= T.cuando) return null;
-  if (f >= T.bonus) return "highlights";
-  if (f >= T.tercero) return "bio";
-  if (f >= T.segundo) return "avatar";
-  if (f >= T.primero) return "username";
+  if (f >= -LEAD + T.cuando) return null;
+  if (f >= -LEAD + T.bonus) return "highlights";
+  if (f >= -LEAD + T.contacto) return "contact";
+  if (f >= -LEAD + T.tercero) return "bio";
+  if (f >= -LEAD + T.segundo) return "avatar";
+  if (f >= -LEAD + T.primero) return "username";
   return null;
 };
 
 const chipAt = (f: number): string | null => {
-  if (f >= T.cuando) return null;
-  if (f >= T.bonus) return "+1 · BONUS";
-  if (f >= T.tercero) return "03 · BIO";
-  if (f >= T.segundo) return "02 · FOTO";
-  if (f >= T.primero) return "01 · USUARIO";
+  if (f >= -LEAD + T.cuando) return null;
+  if (f >= -LEAD + T.bonus) return "+1 · BONUS";
+  if (f >= -LEAD + T.contacto) return "03 · BIO → CONTACTO";
+  if (f >= -LEAD + T.tercero) return "03 · BIO";
+  if (f >= -LEAD + T.segundo) return "02 · FOTO";
+  if (f >= -LEAD + T.primero) return "01 · USUARIO";
   return null;
 };
 
@@ -122,6 +127,15 @@ const GenericLogo: React.FC<{ size: number }> = ({ size }) => (
   <svg width={size} height={size} viewBox="0 0 100 100">
     <circle cx="50" cy="50" r="50" fill="#D9D6CF" />
     <polygon points="50,24 72,37 72,63 50,76 28,63 28,37" fill="#A9A59C" />
+  </svg>
+);
+
+const BrandLogo: React.FC<{ size: number }> = ({ size }) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="50" fill={colors.ink} />
+    <text x="50" y="62" textAnchor="middle" fontFamily={fonts.serif} fontWeight={600} fontSize="38" fill={colors.cream}>
+      LR
+    </text>
   </svg>
 );
 
@@ -208,12 +222,14 @@ const ProfileCard: React.FC = () => {
   const focus = focusAt(frame);
   const cardIn = spring({ frame: frame - T.card, fps: FPS, config: { damping: 200 } });
 
-  const goodUser = frame >= T.random + 16;
-  const username = goodUser ? typed("@lucia.fitcoach", frame, T.random + 16) : "@lm_str.0fficial_24";
-  const faceOn = frame >= T.cara;
+  const goodUser = frame >= T.random + 4;
+  const username = goodUser ? typed("@lucia.fitcoach", frame, T.random + 4, 0.8) : "@lm_str.0fficial_24";
+  const logoOn = frame >= T.logo && frame < T.cara;
+  const blur = frame < T.clara ? 5 : 0;
   const whatsappOn = frame >= T.whatsapp;
   const webOn = frame >= T.web;
-  const final = frame >= T.cuando;
+  const avatarTag =
+    frame >= T.cara && frame < T.tercero ? "Recomendado" : logoOn ? "Si eres empresa" : null;
   
   const button = (label: string, primary: boolean, pulse: number, show = true): React.ReactNode =>
     show ? (
@@ -226,7 +242,7 @@ const ProfileCard: React.FC = () => {
           placeItems: "center",
           fontFamily: fonts.sans,
           fontWeight: 700,
-          fontSize: 26,
+          fontSize: 24,
           background: primary ? colors.teal : "#ECE8E1",
           color: colors.ink,
           transform: `scale(${1 + pulse * 0.07})`,
@@ -278,7 +294,7 @@ const ProfileCard: React.FC = () => {
         padding: 26,
         boxSizing: "border-box",
         opacity: cardIn,
-        transform: `translateY(${(1 - cardIn) * 60}px))`,
+        transform: `translateY(${(1 - cardIn) * 60}px)`,
         transformOrigin: "50% 40%",
         color: colors.ink,
       }}
@@ -287,19 +303,40 @@ const ProfileCard: React.FC = () => {
       <div style={{ display: "flex", gap: 30, alignItems: "center" }}>
         <Focusable id="avatar" current={focus} style={{ borderRadius: 140 }}>
           <div style={{ position: "relative", width: 116, height: 116 }}>
-            {faceOn ? <Face size={116} /> : <GenericLogo size={116} />}
-            {faceOn && <Badge ok style={{ position: "absolute", right: -6, bottom: -6 }} />}
-            {frame >= T.logo && frame < T.tercero && (
-              <div style={{ position: "absolute", left: 136, top: 22, ...enter(frame, T.logo) }}>
-                <div style={{ position: "relative" }}>
-                  <GenericLogo size={74} />
-                  <Badge ok={false} size={34} style={{ position: "absolute", right: -8, bottom: -8 }} />
-                </div>
+            {frame < T.segundo ? (
+              <GenericLogo size={116} />
+            ) : logoOn ? (
+              <BrandLogo size={116} />
+            ) : (
+              <div style={{ filter: `blur(${blur}px)` }}>
+                <Face size={116} />
+              </div>
+            )}
+            {frame >= T.clara && <Badge ok style={{ position: "absolute", right: -6, bottom: -6 }} />}
+            {avatarTag && (
+              <div
+                style={{
+                  position: "absolute",
+                  left: 140,
+                  top: 36,
+                  ...enter(frame, logoOn ? T.logo : T.cara),
+                  fontFamily: fonts.sans,
+                  fontWeight: 700,
+                  fontSize: 26,
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                  background: colors.teal,
+                  padding: "8px 16px",
+                  borderRadius: 10,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {avatarTag}
               </div>
             )}
           </div>
         </Focusable>
-        <div style={{ flex: 1, opacity: frame >= T.logo && frame < T.tercero ? 0 : 1 }}>
+        <div style={{ flex: 1, opacity: avatarTag ? 0 : 1 }}>
           <Focusable id="username" current={focus} style={{ display: "inline-block", padding: "2px 8px", margin: "-2px -8px" }}>
             <div
               style={{
@@ -307,13 +344,13 @@ const ProfileCard: React.FC = () => {
                 fontWeight: 700,
                 fontSize: 38,
                 whiteSpace: "nowrap",
-                textDecoration: !goodUser && frame >= T.random ? "line-through" : "none",
+                textDecoration: !goodUser && frame >= T.codigo ? "line-through" : "none",
                 textDecorationThickness: 5,
-                color: !goodUser && frame >= T.random ? "#9A958C" : colors.ink,
+                color: !goodUser && frame >= T.codigo ? "#9A958C" : colors.ink,
               }}
             >
               {username}
-              {goodUser && frame >= T.random + 34 && (
+              {goodUser && frame >= T.random + 18 && (
                 <Badge ok size={36} style={{ display: "inline-grid", marginLeft: 14, verticalAlign: "middle" }} />
               )}
             </div>
@@ -336,11 +373,7 @@ const ProfileCard: React.FC = () => {
       {/* Nombre + bio */}
       <Focusable id="bio" current={focus} style={{ padding: "4px 8px", margin: "14px -8px 0" }}>
         <div style={{ fontFamily: fonts.sans, fontWeight: 700, fontSize: 27, height: 36 }}>
-          Lucía Ruiz{webOn && (
-            <span style={{ fontWeight: 500, color: colors.ink, marginLeft: 16, fontSize: 24, ...enter(frame, T.web) }}>
-              <Mark color={colors.teal} progress={sweep(frame, T.web, 8)}>lucia.fit/plan</Mark>
-            </span>
-          )}
+          Lucía Ruiz
         </div>
         {frame < T.haces ? (
           <div style={{ fontFamily: fonts.sans, fontSize: 26, height: 108, color: "#8E897F" }}>
@@ -350,43 +383,38 @@ const ProfileCard: React.FC = () => {
           <div style={{ height: 108 }}>
             {bioLine("Coach fitness para mamás ocupadas", "Qué haces", T.haces)}
             {bioLine("+300 alumnas con resultados", "Resultados", T.resultados)}
-            {bioLine("Escríbeme PLAN por DM ↓", "Qué hago ahora", T.ahora)}
+            {bioLine("Escríbeme PLAN por DM ↓", "Qué hacer ahora", T.ahora)}
           </div>
         )}
       </Focusable>
 
       {/* Botones */}
-      <div
-        style={{
-          display: "flex",
-          gap: 14,
-          marginTop: 12,
-          opacity: focus !== null ? 0.22 : 1,
-        }}
-      >
-        {button(frame >= T.perder ? "Siguiendo" : "Seguir", false, 0)}
-        {button("Mensaje", frame >= T.dm, pulseAround(frame, T.dm) + pulseAround(frame, T.despues, 24))}
-        {button("WhatsApp", true, pulseAround(frame, T.whatsapp), whatsappOn)}
-      </div>
+      <Focusable id="contact" current={focus} style={{ marginTop: 12, padding: 6, margin: "12px -6px 0" }}>
+        <div style={{ display: "flex", gap: 12 }}>
+          {button("Seguir", false, 0)}
+          {button("Mensaje", frame >= T.dm, pulseAround(frame, T.dm) + pulseAround(frame, T.despues, 24))}
+          {button("WhatsApp", true, pulseAround(frame, T.whatsapp) + pulseAround(frame, T.despues, 24), whatsappOn)}
+          {button("Web", true, pulseAround(frame, T.web), webOn)}
+        </div>
+      </Focusable>
 
       {/* Destacadas */}
       <Focusable id="highlights" current={focus} style={{ marginTop: 18, padding: "6px 0" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", padding: "0 6px" }}>
+        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
           <Highlight label="Quién soy" icon={<Icon d={ICONS.person} />} show={T.quien} />
           <Highlight label="Qué hago" icon={<Icon d={ICONS.work} />} show={T.hago} />
           <Highlight label="Testimonios" icon={<Icon d={ICONS.star} />} show={T.testimonios} />
-          <Highlight label="Contacto" icon={<Icon d={ICONS.chat} />} show={T.contactarte} accent pulse={pulseAround(frame, T.contactarte + 10, 14)} />
         </div>
       </Focusable>
 
       {/* Cronómetro: "entiende en segundos" */}
-      {frame >= T.segundos && (
+      {frame >= T.entender && (
         <div
           style={{
             position: "absolute",
             right: 24,
             top: -30,
-            ...enter(frame, T.segundos),
+            ...enter(frame, T.entender),
             background: colors.ink,
             color: colors.cream,
             borderRadius: 60,
@@ -396,7 +424,7 @@ const ProfileCard: React.FC = () => {
             fontSize: 30,
           }}
         >
-          ⏱ 3 s
+          ✓ Entiende si le sirves
         </div>
       )}
     </div>
@@ -485,7 +513,7 @@ const Outro: React.FC = () => {
             </div>
             {frame >= T.teDigo && (
               <div style={{ ...enter(frame, T.teDigo), fontFamily: fonts.serif, fontSize: 74, lineHeight: 1.08, marginTop: 24, color: colors.teal }}>
-                Te digo qué cambiar.
+                Te digo cómo mejorar.
               </div>
             )}
           </>

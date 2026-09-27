@@ -11,7 +11,7 @@ export const at = (word: string, after = 0): number => {
   const hit = subs.words.find(
     (w) =>
       w.t >= after - 0.01 &&
-      w.w.replace(/[.,:;—…?!]/g, "").toLowerCase() === word.toLowerCase(),
+      w.w.replace(/[.,:;—…?!¿¡]/g, "").toLowerCase() === word.toLowerCase(),
   );
   if (!hit) throw new Error(`Palabra no encontrada en el guion: ${word}`);
   return Math.round(hit.t * FPS);

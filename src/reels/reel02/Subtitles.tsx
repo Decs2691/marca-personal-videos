@@ -7,9 +7,9 @@ import { lines } from "./timing";
 // se lea igual sobre la pared clara, tu camiseta o la animación.
 const SOFT_YELLOW = "#F3E2A0";
 const KEYWORDS = new Set([
-  "instagram", "clientes", "3", "bonus", "usuario", "claro", "foto", "cara",
-  "marca", "bio", "preguntas", "destacadas", "contactarte", "dm", "whatsapp",
-  "web", "segundos", "cambiar", "sígueme", "primero", "segundo", "tercero",
+  "instagram", "clientes", "3", "bonus", "usuario", "claro", "clara", "foto",
+  "logo", "cara", "bio", "preguntas", "contratarte", "dm", "whatsapp", "web",
+  "destacadas", "mejorar", "sígueme", "primero", "segundo", "tercero",
 ]);
 
 export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
@@ -47,7 +47,7 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
       }}
     >
       {line.text.split(" ").map((w, i) => {
-        const key = w.replace(/[.,:;—…?!]/g, "").toLowerCase();
+        const key = w.replace(/[.,:;—…?!¿¡]/g, "").toLowerCase();
         return (
           <React.Fragment key={i}>
             <span style={{ color: KEYWORDS.has(key) ? SOFT_YELLOW : undefined }}>

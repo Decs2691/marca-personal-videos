@@ -3,963 +3,1061 @@
   {
    "text": "Tu perfil de Instagram",
    "start": 0.0,
-   "end": 0.89
+   "end": 1.06
   },
   {
-   "text": "te está perdiendo clientes,",
-   "start": 0.89,
-   "end": 2.56
+   "text": "está perdiendo clientes",
+   "start": 1.06,
+   "end": 2.28
   },
   {
    "text": "y no es por",
-   "start": 2.56,
-   "end": 3.62
+   "start": 2.28,
+   "end": 2.72
   },
   {
    "text": "lo que crees.",
-   "start": 3.62,
-   "end": 4.02
+   "start": 2.72,
+   "end": 3.48
   },
   {
    "text": "No es el contenido,",
-   "start": 4.02,
-   "end": 5.62
+   "start": 3.48,
+   "end": 5.03
   },
   {
    "text": "no es la estética.",
-   "start": 5.62,
-   "end": 6.97
+   "start": 5.03,
+   "end": 6.31
   },
   {
    "text": "Son 3 cosas puntuales",
-   "start": 6.97,
-   "end": 7.88
+   "start": 6.31,
+   "end": 7.4
   },
   {
-   "text": "que casi nadie revisa…",
-   "start": 7.88,
-   "end": 9.28
+   "text": "que casi nadie revisa.",
+   "start": 7.4,
+   "end": 8.63
   },
   {
-   "text": "y un bonus al final",
-   "start": 9.28,
-   "end": 10.52
+   "text": "Y al final",
+   "start": 8.63,
+   "end": 9.14
   },
   {
-   "text": "que casi nadie aprovecha.",
-   "start": 10.52,
-   "end": 12.11
+   "text": "te voy a dar",
+   "start": 9.14,
+   "end": 9.5
   },
   {
-   "text": "Primero:",
-   "start": 12.11,
-   "end": 12.72
+   "text": "un bonus que casi",
+   "start": 9.5,
+   "end": 10.54
+  },
+  {
+   "text": "nadie aprovecha.",
+   "start": 10.54,
+   "end": 11.32
+  },
+  {
+   "text": "Primero,",
+   "start": 11.32,
+   "end": 11.88
   },
   {
    "text": "tu nombre de usuario.",
-   "start": 12.72,
-   "end": 13.59
+   "start": 11.88,
+   "end": 12.72
   },
   {
    "text": "Tiene que ser claro,",
-   "start": 13.59,
-   "end": 14.34
+   "start": 12.72,
+   "end": 13.68
   },
   {
    "text": "no un código random.",
-   "start": 14.34,
-   "end": 15.77
+   "start": 13.68,
+   "end": 14.86
   },
   {
-   "text": "Segundo:",
-   "start": 15.77,
-   "end": 16.14
+   "text": "Segundo,",
+   "start": 14.86,
+   "end": 15.53
   },
   {
-   "text": "tu foto de perfil.",
-   "start": 16.14,
-   "end": 17.25
+   "text": "tu foto de perfil",
+   "start": 15.53,
+   "end": 16.63
   },
   {
-   "text": "Que se vea tu cara",
-   "start": 17.25,
-   "end": 17.99
+   "text": "tiene que ser clara",
+   "start": 16.63,
+   "end": 17.66
   },
   {
-   "text": "o tu marca clara,",
-   "start": 17.99,
-   "end": 18.73
+   "text": "o tu logo,",
+   "start": 17.66,
+   "end": 18.34
   },
   {
-   "text": "no un logo genérico",
-   "start": 18.73,
+   "text": "si es una empresa,",
+   "start": 18.34,
+   "end": 19.36
+  },
+  {
+   "text": "tiene que ser claro.",
+   "start": 19.36,
    "end": 20.37
   },
   {
-   "text": "sin contexto.",
+   "text": "Mi recomendación:",
    "start": 20.37,
    "end": 21.24
   },
   {
-   "text": "Tercero, el que más",
+   "text": "que sea tu cara.",
    "start": 21.24,
-   "end": 22.23
+   "end": 21.98
   },
   {
-   "text": "se salta: la bio.",
-   "start": 22.23,
-   "end": 23.02
+   "text": "Tercero, y este es",
+   "start": 21.98,
+   "end": 22.6
   },
   {
-   "text": "Tiene que responder",
-   "start": 23.02,
-   "end": 23.66
+   "text": "el que más se salta:",
+   "start": 22.6,
+   "end": 24.32
   },
   {
-   "text": "3 preguntas,",
-   "start": 23.66,
-   "end": 24.97
+   "text": "La bio tiene que",
+   "start": 24.32,
+   "end": 25.42
   },
   {
-   "text": "en una línea cada una:",
-   "start": 24.97,
+   "text": "responder 3 preguntas",
+   "start": 25.42,
    "end": 26.87
   },
   {
-   "text": "qué haces,",
+   "text": "en una línea cada una.",
    "start": 26.87,
-   "end": 27.24
+   "end": 28.22
   },
   {
-   "text": "qué resultados tienes,",
-   "start": 27.24,
-   "end": 28.44
+   "text": "¿Qué haces?",
+   "start": 28.22,
+   "end": 28.81
   },
   {
-   "text": "y qué hago ahora.",
-   "start": 28.44,
+   "text": "¿Qué resultados tienes?",
+   "start": 28.81,
    "end": 29.88
   },
   {
-   "text": "Y el bonus:",
+   "text": "¿Y qué hacer ahora?",
    "start": 29.88,
-   "end": 30.4
+   "end": 30.74
   },
   {
-   "text": "tus destacadas.",
-   "start": 30.4,
-   "end": 31.05
+   "text": "Pon lo que sea,",
+   "start": 30.74,
+   "end": 31.48
   },
   {
-   "text": "Pon quién soy,",
-   "start": 31.05,
-   "end": 31.44
+   "text": "pero que tengan",
+   "start": 31.48,
+   "end": 32.08
   },
   {
-   "text": "qué hago y testimonios.",
-   "start": 31.44,
+   "text": "cómo contratarte.",
+   "start": 32.08,
    "end": 32.7
   },
   {
-   "text": "Pero lo más importante:",
+   "text": "Nadie tiene que adivinarlo.",
    "start": 32.7,
    "end": 33.94
   },
   {
-   "text": "que quede clarísimo",
+   "text": "Yo lo hago por DM.",
    "start": 33.94,
    "end": 35.07
   },
   {
-   "text": "cómo contactarte.",
+   "text": "Tú lo puedes hacer",
    "start": 35.07,
-   "end": 35.84
+   "end": 35.7
   },
   {
-   "text": "Yo lo hago por DM,",
-   "start": 35.84,
-   "end": 36.62
+   "text": "por tu WhatsApp,",
+   "start": 35.7,
+   "end": 36.44
   },
   {
-   "text": "tú usa WhatsApp",
-   "start": 36.62,
-   "end": 37.27
+   "text": "por tu página web",
+   "start": 36.44,
+   "end": 37.32
   },
   {
-   "text": "o tu web,",
-   "start": 37.27,
+   "text": "y el bonus son",
+   "start": 37.32,
    "end": 37.85
   },
   {
-   "text": "pero que nadie tenga",
+   "text": "tus historias destacadas.",
    "start": 37.85,
-   "end": 38.76
+   "end": 39.21
   },
   {
-   "text": "que adivinarlo.",
-   "start": 38.76,
+   "text": "Pon quién soy,",
+   "start": 39.21,
    "end": 40.15
   },
   {
-   "text": "Cuando esto está claro,",
+   "text": "qué hago,",
    "start": 40.15,
-   "end": 41.44
+   "end": 40.98
   },
   {
-   "text": "cualquiera que llega",
-   "start": 41.44,
-   "end": 42.12
+   "text": "testimonios.",
+   "start": 40.98,
+   "end": 41.76
+  },
+  {
+   "text": "Cuando está claro,",
+   "start": 41.76,
+   "end": 42.55
+  },
+  {
+   "text": "cualquiera que llegue",
+   "start": 42.55,
+   "end": 43.08
   },
   {
    "text": "a tu perfil",
-   "start": 42.12,
-   "end": 42.83
+   "start": 43.08,
+   "end": 43.64
   },
   {
-   "text": "entiende en segundos",
-   "start": 42.83,
-   "end": 43.79
+   "text": "va a entender",
+   "start": 43.64,
+   "end": 44.16
   },
   {
    "text": "si le sirves",
-   "start": 43.79,
-   "end": 44.34
+   "start": 44.16,
+   "end": 44.8
   },
   {
-   "text": "y qué hacer después.",
-   "start": 44.34,
-   "end": 45.16
+   "text": "o qué tiene que",
+   "start": 44.8,
+   "end": 45.38
   },
   {
-   "text": "No te digo",
-   "start": 45.16,
+   "text": "hacer después.",
+   "start": 45.38,
    "end": 46.01
   },
   {
-   "text": "qué está mal.",
+   "text": "No te digo",
    "start": 46.01,
-   "end": 46.48
+   "end": 46.56
   },
   {
-   "text": "Te digo qué cambiar.",
-   "start": 46.48,
-   "end": 48.36
+   "text": "qué está mal,",
+   "start": 46.56,
+   "end": 47.62
   },
   {
-   "text": "Sígueme si quieres",
-   "start": 48.36,
-   "end": 49.71
+   "text": "te digo cómo mejorar.",
+   "start": 47.62,
+   "end": 49.11
+  },
+  {
+   "text": "Y sígueme si quieres",
+   "start": 49.11,
+   "end": 50.14
   },
   {
    "text": "dejar de perder clientes.",
-   "start": 49.71,
+   "start": 50.14,
    "end": 50.92
   }
  ],
  "words": [
   {
    "w": "Tu",
-   "t": 0.0
+   "t": 0.16
   },
   {
    "w": "perfil",
-   "t": 0.13
+   "t": 0.34
   },
   {
    "w": "de",
-   "t": 0.38
+   "t": 0.54
   },
   {
    "w": "Instagram",
-   "t": 0.51
-  },
-  {
-   "w": "te",
-   "t": 0.89
+   "t": 0.72
   },
   {
    "w": "está",
-   "t": 1.02
+   "t": 1.06
   },
   {
    "w": "perdiendo",
-   "t": 1.27
+   "t": 1.18
   },
   {
-   "w": "clientes,",
-   "t": 2.28
+   "w": "clientes",
+   "t": 1.5
   },
   {
    "w": "y",
-   "t": 2.56
+   "t": 2.34
   },
   {
    "w": "no",
-   "t": 2.7
+   "t": 2.42
   },
   {
    "w": "es",
-   "t": 2.84
+   "t": 2.5
   },
   {
    "w": "por",
-   "t": 3.48
+   "t": 2.62
   },
   {
    "w": "lo",
-   "t": 3.62
+   "t": 2.72
   },
   {
    "w": "que",
-   "t": 3.75
+   "t": 2.8
   },
   {
    "w": "crees.",
-   "t": 3.89
+   "t": 2.98
   },
   {
    "w": "No",
-   "t": 4.02
+   "t": 3.66
   },
   {
    "w": "es",
-   "t": 4.16
+   "t": 3.82
   },
   {
    "w": "el",
-   "t": 4.3
+   "t": 3.92
   },
   {
    "w": "contenido,",
-   "t": 5.03
+   "t": 4.22
   },
   {
    "w": "no",
-   "t": 5.62
+   "t": 5.18
   },
   {
    "w": "es",
-   "t": 5.76
+   "t": 5.3
   },
   {
    "w": "la",
-   "t": 6.31
+   "t": 5.4
   },
   {
    "w": "estética.",
-   "t": 6.44
+   "t": 5.54
   },
   {
    "w": "Son",
-   "t": 6.97
+   "t": 6.48
   },
   {
    "w": "3",
-   "t": 7.1
+   "t": 6.66
   },
   {
    "w": "cosas",
-   "t": 7.23
+   "t": 6.86
   },
   {
    "w": "puntuales",
-   "t": 7.49
+   "t": 7.1
   },
   {
    "w": "que",
-   "t": 7.88
+   "t": 7.4
   },
   {
    "w": "casi",
-   "t": 8.01
+   "t": 7.62
   },
   {
    "w": "nadie",
-   "t": 8.62
+   "t": 7.86
   },
   {
-   "w": "revisa…",
-   "t": 8.89
-  },
-  {
-   "w": "y",
-   "t": 9.28
-  },
-  {
-   "w": "un",
-   "t": 9.41
-  },
-  {
-   "w": "bonus",
-   "t": 9.54
-  },
-  {
-   "w": "al",
-   "t": 10.11
-  },
-  {
-   "w": "final",
-   "t": 10.24
-  },
-  {
-   "w": "que",
-   "t": 10.52
-  },
-  {
-   "w": "casi",
-   "t": 10.66
-  },
-  {
-   "w": "nadie",
-   "t": 11.32
-  },
-  {
-   "w": "aprovecha.",
-   "t": 11.58
-  },
-  {
-   "w": "Primero:",
-   "t": 12.11
-  },
-  {
-   "w": "tu",
-   "t": 12.72
-  },
-  {
-   "w": "nombre",
-   "t": 12.85
-  },
-  {
-   "w": "de",
-   "t": 13.09
-  },
-  {
-   "w": "usuario.",
-   "t": 13.22
-  },
-  {
-   "w": "Tiene",
-   "t": 13.59
-  },
-  {
-   "w": "que",
-   "t": 13.84
-  },
-  {
-   "w": "ser",
-   "t": 13.96
-  },
-  {
-   "w": "claro,",
-   "t": 14.09
-  },
-  {
-   "w": "no",
-   "t": 14.34
-  },
-  {
-   "w": "un",
-   "t": 14.46
-  },
-  {
-   "w": "código",
-   "t": 14.86
-  },
-  {
-   "w": "random.",
-   "t": 15.53
-  },
-  {
-   "w": "Segundo:",
-   "t": 15.77
-  },
-  {
-   "w": "tu",
-   "t": 16.14
-  },
-  {
-   "w": "foto",
-   "t": 16.63
-  },
-  {
-   "w": "de",
-   "t": 16.88
-  },
-  {
-   "w": "perfil.",
-   "t": 17.0
-  },
-  {
-   "w": "Que",
-   "t": 17.25
-  },
-  {
-   "w": "se",
-   "t": 17.37
-  },
-  {
-   "w": "vea",
-   "t": 17.49
-  },
-  {
-   "w": "tu",
-   "t": 17.62
-  },
-  {
-   "w": "cara",
-   "t": 17.74
-  },
-  {
-   "w": "o",
-   "t": 17.99
-  },
-  {
-   "w": "tu",
-   "t": 18.11
-  },
-  {
-   "w": "marca",
-   "t": 18.23
-  },
-  {
-   "w": "clara,",
-   "t": 18.48
-  },
-  {
-   "w": "no",
-   "t": 18.73
-  },
-  {
-   "w": "un",
-   "t": 18.85
-  },
-  {
-   "w": "logo",
-   "t": 19.36
-  },
-  {
-   "w": "genérico",
-   "t": 19.59
-  },
-  {
-   "w": "sin",
-   "t": 20.37
-  },
-  {
-   "w": "contexto.",
-   "t": 20.52
-  },
-  {
-   "w": "Tercero,",
-   "t": 21.24
-  },
-  {
-   "w": "el",
-   "t": 21.59
-  },
-  {
-   "w": "que",
-   "t": 21.98
-  },
-  {
-   "w": "más",
-   "t": 22.1
-  },
-  {
-   "w": "se",
-   "t": 22.23
-  },
-  {
-   "w": "salta:",
-   "t": 22.6
-  },
-  {
-   "w": "la",
-   "t": 22.81
-  },
-  {
-   "w": "bio.",
-   "t": 22.92
-  },
-  {
-   "w": "Tiene",
-   "t": 23.02
-  },
-  {
-   "w": "que",
-   "t": 23.24
-  },
-  {
-   "w": "responder",
-   "t": 23.34
-  },
-  {
-   "w": "3",
-   "t": 23.66
-  },
-  {
-   "w": "preguntas",
-   "t": 24.32
-  },
-  {
-   "w": "en",
-   "t": 24.97
-  },
-  {
-   "w": "una",
-   "t": 25.08
-  },
-  {
-   "w": "línea",
-   "t": 25.31
-  },
-  {
-   "w": "cada",
-   "t": 25.75
-  },
-  {
-   "w": "una",
-   "t": 26.01
-  },
-  {
-   "w": "—",
-   "t": 26.26
-  },
-  {
-   "w": "qué",
-   "t": 26.87
-  },
-  {
-   "w": "haces,",
-   "t": 27.0
-  },
-  {
-   "w": "qué",
-   "t": 27.24
-  },
-  {
-   "w": "resultados",
-   "t": 27.37
-  },
-  {
-   "w": "tienes,",
-   "t": 28.22
-  },
-  {
-   "w": "y",
-   "t": 28.44
-  },
-  {
-   "w": "qué",
-   "t": 28.81
-  },
-  {
-   "w": "hago",
-   "t": 28.94
-  },
-  {
-   "w": "ahora.",
-   "t": 29.21
+   "w": "revisa.",
+   "t": 8.14
   },
   {
    "w": "Y",
-   "t": 29.88
+   "t": 8.68
   },
   {
-   "w": "el",
-   "t": 30.01
+   "w": "al",
+   "t": 8.76
   },
   {
-   "w": "bonus:",
-   "t": 30.14
-  },
-  {
-   "w": "tus",
-   "t": 30.4
-  },
-  {
-   "w": "destacadas.",
-   "t": 30.53
-  },
-  {
-   "w": "Pon",
-   "t": 31.05
-  },
-  {
-   "w": "quién",
-   "t": 31.18
-  },
-  {
-   "w": "soy,",
-   "t": 31.31
-  },
-  {
-   "w": "qué",
-   "t": 31.44
-  },
-  {
-   "w": "hago",
-   "t": 31.57
-  },
-  {
-   "w": "y",
-   "t": 31.84
-  },
-  {
-   "w": "testimonios.",
-   "t": 31.97
-  },
-  {
-   "w": "Pero",
-   "t": 32.7
-  },
-  {
-   "w": "lo",
-   "t": 32.94
-  },
-  {
-   "w": "más",
-   "t": 33.07
-  },
-  {
-   "w": "importante:",
-   "t": 33.19
-  },
-  {
-   "w": "que",
-   "t": 33.94
-  },
-  {
-   "w": "quede",
-   "t": 34.06
-  },
-  {
-   "w": "clarísimo",
-   "t": 34.31
-  },
-  {
-   "w": "cómo",
-   "t": 35.07
-  },
-  {
-   "w": "contactarte.",
-   "t": 35.33
-  },
-  {
-   "w": "Yo",
-   "t": 35.84
-  },
-  {
-   "w": "lo",
-   "t": 35.97
-  },
-  {
-   "w": "hago",
-   "t": 36.1
-  },
-  {
-   "w": "por",
-   "t": 36.36
-  },
-  {
-   "w": "DM,",
-   "t": 36.49
-  },
-  {
-   "w": "tú",
-   "t": 36.62
-  },
-  {
-   "w": "usa",
-   "t": 36.75
-  },
-  {
-   "w": "WhatsApp",
-   "t": 37.01
-  },
-  {
-   "w": "o",
-   "t": 37.27
-  },
-  {
-   "w": "tu",
-   "t": 37.4
-  },
-  {
-   "w": "web,",
-   "t": 37.53
-  },
-  {
-   "w": "pero",
-   "t": 37.85
-  },
-  {
-   "w": "que",
-   "t": 38.11
-  },
-  {
-   "w": "nadie",
-   "t": 38.24
-  },
-  {
-   "w": "tenga",
-   "t": 38.5
-  },
-  {
-   "w": "que",
-   "t": 38.76
-  },
-  {
-   "w": "adivinarlo.",
-   "t": 39.21
-  },
-  {
-   "w": "Cuando",
-   "t": 40.15
-  },
-  {
-   "w": "esto",
-   "t": 40.35
-  },
-  {
-   "w": "está",
-   "t": 40.98
-  },
-  {
-   "w": "claro,",
-   "t": 41.21
-  },
-  {
-   "w": "cualquiera",
-   "t": 41.44
-  },
-  {
-   "w": "que",
-   "t": 41.78
-  },
-  {
-   "w": "llega",
-   "t": 41.9
-  },
-  {
-   "w": "a",
-   "t": 42.12
-  },
-  {
-   "w": "tu",
-   "t": 42.24
-  },
-  {
-   "w": "perfil",
-   "t": 42.55
-  },
-  {
-   "w": "entiende",
-   "t": 42.83
-  },
-  {
-   "w": "en",
-   "t": 43.24
-  },
-  {
-   "w": "segundos",
-   "t": 43.38
-  },
-  {
-   "w": "si",
-   "t": 43.79
-  },
-  {
-   "w": "le",
-   "t": 43.92
-  },
-  {
-   "w": "sirves",
-   "t": 44.06
-  },
-  {
-   "w": "y",
-   "t": 44.34
-  },
-  {
-   "w": "qué",
-   "t": 44.48
-  },
-  {
-   "w": "hacer",
-   "t": 44.61
-  },
-  {
-   "w": "después.",
-   "t": 44.89
-  },
-  {
-   "w": "No",
-   "t": 45.16
+   "w": "final",
+   "t": 8.92
   },
   {
    "w": "te",
-   "t": 45.3
+   "t": 9.14
   },
   {
-   "w": "digo",
-   "t": 45.44
+   "w": "voy",
+   "t": 9.24
   },
   {
-   "w": "qué",
-   "t": 46.01
+   "w": "a",
+   "t": 9.3
   },
   {
-   "w": "está",
-   "t": 46.13
+   "w": "dar",
+   "t": 9.38
   },
   {
-   "w": "mal.",
-   "t": 46.36
+   "w": "un",
+   "t": 9.5
   },
   {
-   "w": "Te",
-   "t": 46.48
+   "w": "bonus",
+   "t": 9.72
   },
   {
-   "w": "digo",
-   "t": 46.59
+   "w": "que",
+   "t": 10.16
   },
   {
-   "w": "qué",
-   "t": 46.82
+   "w": "casi",
+   "t": 10.38
   },
   {
-   "w": "cambiar.",
-   "t": 47.62
+   "w": "nadie",
+   "t": 10.54
   },
   {
-   "w": "Sígueme",
-   "t": 48.36
+   "w": "aprovecha.",
+   "t": 10.78
   },
   {
-   "w": "si",
-   "t": 49.11
+   "w": "Primero,",
+   "t": 11.46
   },
   {
-   "w": "quieres",
-   "t": 49.25
+   "w": "tu",
+   "t": 11.88
   },
   {
-   "w": "dejar",
-   "t": 49.71
+   "w": "nombre",
+   "t": 12.08
   },
   {
    "w": "de",
-   "t": 49.99
+   "t": 12.22
+  },
+  {
+   "w": "usuario.",
+   "t": 12.32
+  },
+  {
+   "w": "Tiene",
+   "t": 12.76
+  },
+  {
+   "w": "que",
+   "t": 12.9
+  },
+  {
+   "w": "ser",
+   "t": 13
+  },
+  {
+   "w": "claro,",
+   "t": 13.28
+  },
+  {
+   "w": "no",
+   "t": 13.68
+  },
+  {
+   "w": "un",
+   "t": 13.94
+  },
+  {
+   "w": "código",
+   "t": 14.18
+  },
+  {
+   "w": "random.",
+   "t": 14.5
+  },
+  {
+   "w": "Segundo,",
+   "t": 15.06
+  },
+  {
+   "w": "tu",
+   "t": 15.6
+  },
+  {
+   "w": "foto",
+   "t": 15.78
+  },
+  {
+   "w": "de",
+   "t": 15.94
+  },
+  {
+   "w": "perfil",
+   "t": 16.14
+  },
+  {
+   "w": "tiene",
+   "t": 16.68
+  },
+  {
+   "w": "que",
+   "t": 16.76
+  },
+  {
+   "w": "ser",
+   "t": 16.88
+  },
+  {
+   "w": "clara",
+   "t": 17.16
+  },
+  {
+   "w": "o",
+   "t": 17.66
+  },
+  {
+   "w": "tu",
+   "t": 17.88
+  },
+  {
+   "w": "logo,",
+   "t": 18.1
+  },
+  {
+   "w": "si",
+   "t": 18.34
+  },
+  {
+   "w": "es",
+   "t": 18.5
+  },
+  {
+   "w": "una",
+   "t": 18.64
+  },
+  {
+   "w": "empresa,",
+   "t": 18.88
+  },
+  {
+   "w": "tiene",
+   "t": 19.44
+  },
+  {
+   "w": "que",
+   "t": 19.54
+  },
+  {
+   "w": "ser",
+   "t": 19.66
+  },
+  {
+   "w": "claro.",
+   "t": 19.96
+  },
+  {
+   "w": "Mi",
+   "t": 20.44
+  },
+  {
+   "w": "recomendación:",
+   "t": 20.64
+  },
+  {
+   "w": "que",
+   "t": 21.28
+  },
+  {
+   "w": "sea",
+   "t": 21.38
+  },
+  {
+   "w": "tu",
+   "t": 21.5
+  },
+  {
+   "w": "cara.",
+   "t": 21.68
+  },
+  {
+   "w": "Tercero,",
+   "t": 22.08
+  },
+  {
+   "w": "y",
+   "t": 22.68
+  },
+  {
+   "w": "este",
+   "t": 22.76
+  },
+  {
+   "w": "es",
+   "t": 22.86
+  },
+  {
+   "w": "el",
+   "t": 22.94
+  },
+  {
+   "w": "que",
+   "t": 23.04
+  },
+  {
+   "w": "más",
+   "t": 23.26
+  },
+  {
+   "w": "se",
+   "t": 23.5
+  },
+  {
+   "w": "salta:",
+   "t": 23.7
+  },
+  {
+   "w": "La",
+   "t": 24.46
+  },
+  {
+   "w": "bio",
+   "t": 24.62
+  },
+  {
+   "w": "tiene",
+   "t": 25.04
+  },
+  {
+   "w": "que",
+   "t": 25.14
+  },
+  {
+   "w": "responder",
+   "t": 25.42
+  },
+  {
+   "w": "3",
+   "t": 25.86
+  },
+  {
+   "w": "preguntas",
+   "t": 26.26
+  },
+  {
+   "w": "en",
+   "t": 26.98
+  },
+  {
+   "w": "una",
+   "t": 27.12
+  },
+  {
+   "w": "línea",
+   "t": 27.32
+  },
+  {
+   "w": "cada",
+   "t": 27.56
+  },
+  {
+   "w": "una.",
+   "t": 27.86
+  },
+  {
+   "w": "¿Qué",
+   "t": 28.24
+  },
+  {
+   "w": "haces?",
+   "t": 28.42
+  },
+  {
+   "w": "¿Qué",
+   "t": 28.82
+  },
+  {
+   "w": "resultados",
+   "t": 29.1
+  },
+  {
+   "w": "tienes?",
+   "t": 29.54
+  },
+  {
+   "w": "¿Y",
+   "t": 29.92
+  },
+  {
+   "w": "qué",
+   "t": 30.06
+  },
+  {
+   "w": "hacer",
+   "t": 30.16
+  },
+  {
+   "w": "ahora?",
+   "t": 30.48
+  },
+  {
+   "w": "Pon",
+   "t": 30.74
+  },
+  {
+   "w": "lo",
+   "t": 30.88
+  },
+  {
+   "w": "que",
+   "t": 31
+  },
+  {
+   "w": "sea,",
+   "t": 31.18
+  },
+  {
+   "w": "pero",
+   "t": 31.48
+  },
+  {
+   "w": "que",
+   "t": 31.58
+  },
+  {
+   "w": "tengan",
+   "t": 31.78
+  },
+  {
+   "w": "cómo",
+   "t": 32.08
+  },
+  {
+   "w": "contratarte.",
+   "t": 32.36
+  },
+  {
+   "w": "Nadie",
+   "t": 32.86
+  },
+  {
+   "w": "tiene",
+   "t": 33.14
+  },
+  {
+   "w": "que",
+   "t": 33.24
+  },
+  {
+   "w": "adivinarlo.",
+   "t": 33.36
+  },
+  {
+   "w": "Yo",
+   "t": 34.12
+  },
+  {
+   "w": "lo",
+   "t": 34.22
+  },
+  {
+   "w": "hago",
+   "t": 34.36
+  },
+  {
+   "w": "por",
+   "t": 34.54
+  },
+  {
+   "w": "DM.",
+   "t": 34.72
+  },
+  {
+   "w": "Tú",
+   "t": 35.08
+  },
+  {
+   "w": "lo",
+   "t": 35.18
+  },
+  {
+   "w": "puedes",
+   "t": 35.3
+  },
+  {
+   "w": "hacer",
+   "t": 35.5
+  },
+  {
+   "w": "por",
+   "t": 35.7
+  },
+  {
+   "w": "tu",
+   "t": 35.82
+  },
+  {
+   "w": "WhatsApp,",
+   "t": 35.98
+  },
+  {
+   "w": "por",
+   "t": 36.44
+  },
+  {
+   "w": "tu",
+   "t": 36.56
+  },
+  {
+   "w": "página",
+   "t": 36.74
+  },
+  {
+   "w": "web",
+   "t": 37.04
+  },
+  {
+   "w": "y",
+   "t": 37.32
+  },
+  {
+   "w": "el",
+   "t": 37.4
+  },
+  {
+   "w": "bonus",
+   "t": 37.56
+  },
+  {
+   "w": "son",
+   "t": 37.94
+  },
+  {
+   "w": "tus",
+   "t": 38.06
+  },
+  {
+   "w": "historias",
+   "t": 38.28
+  },
+  {
+   "w": "destacadas.",
+   "t": 38.66
+  },
+  {
+   "w": "Pon",
+   "t": 39.28
+  },
+  {
+   "w": "quién",
+   "t": 39.44
+  },
+  {
+   "w": "soy,",
+   "t": 39.7
+  },
+  {
+   "w": "qué",
+   "t": 40.24
+  },
+  {
+   "w": "hago,",
+   "t": 40.48
+  },
+  {
+   "w": "testimonios.",
+   "t": 41.18
+  },
+  {
+   "w": "Cuando",
+   "t": 41.76
+  },
+  {
+   "w": "está",
+   "t": 42.02
+  },
+  {
+   "w": "claro,",
+   "t": 42.32
+  },
+  {
+   "w": "cualquiera",
+   "t": 42.6
+  },
+  {
+   "w": "que",
+   "t": 42.88
+  },
+  {
+   "w": "llegue",
+   "t": 42.98
+  },
+  {
+   "w": "a",
+   "t": 43.08
+  },
+  {
+   "w": "tu",
+   "t": 43.16
+  },
+  {
+   "w": "perfil",
+   "t": 43.32
+  },
+  {
+   "w": "va",
+   "t": 43.64
+  },
+  {
+   "w": "a",
+   "t": 43.74
+  },
+  {
+   "w": "entender",
+   "t": 43.86
+  },
+  {
+   "w": "si",
+   "t": 44.16
+  },
+  {
+   "w": "le",
+   "t": 44.26
+  },
+  {
+   "w": "sirves",
+   "t": 44.46
+  },
+  {
+   "w": "o",
+   "t": 44.8
+  },
+  {
+   "w": "qué",
+   "t": 44.98
+  },
+  {
+   "w": "tiene",
+   "t": 45.16
+  },
+  {
+   "w": "que",
+   "t": 45.26
+  },
+  {
+   "w": "hacer",
+   "t": 45.38
+  },
+  {
+   "w": "después.",
+   "t": 45.64
+  },
+  {
+   "w": "No",
+   "t": 46.16
+  },
+  {
+   "w": "te",
+   "t": 46.28
+  },
+  {
+   "w": "digo",
+   "t": 46.42
+  },
+  {
+   "w": "qué",
+   "t": 46.56
+  },
+  {
+   "w": "está",
+   "t": 46.72
+  },
+  {
+   "w": "mal,",
+   "t": 46.92
+  },
+  {
+   "w": "te",
+   "t": 47.66
+  },
+  {
+   "w": "digo",
+   "t": 47.84
+  },
+  {
+   "w": "cómo",
+   "t": 48.48
+  },
+  {
+   "w": "mejorar.",
+   "t": 48.78
+  },
+  {
+   "w": "Y",
+   "t": 49.2
+  },
+  {
+   "w": "sígueme",
+   "t": 49.3
+  },
+  {
+   "w": "si",
+   "t": 49.76
+  },
+  {
+   "w": "quieres",
+   "t": 49.92
+  },
+  {
+   "w": "dejar",
+   "t": 50.14
+  },
+  {
+   "w": "de",
+   "t": 50.26
   },
   {
    "w": "perder",
-   "t": 50.13
+   "t": 50.36
   },
   {
    "w": "clientes.",
-   "t": 50.41
+   "t": 50.66
   }
  ]
 }
