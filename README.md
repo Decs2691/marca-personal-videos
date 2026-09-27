@@ -6,6 +6,7 @@ Reels para IG y TikTok hechos con código ([Remotion](https://www.remotion.dev))
 | ID | Tema | Duración |
 |---|---|---|
 | `Reel01Hooks` | Qué es un hook + 3 tipos (01–03 de 20) | 34 s, 1080×1920 |
+| `Reel02Bio` | 3 cosas + 1 bonus para que tu perfil no pierda clientes (pantalla dividida) | 51 s, 1080×1920 |
 
 ## Cómo generarlo en tu Mac (solo la primera vez: pasos 1–3)
 1. Instala Node.js LTS desde https://nodejs.org (el instalador .pkg), o con `brew install node` si usas Homebrew.
@@ -22,13 +23,17 @@ Reels para IG y TikTok hechos con código ([Remotion](https://www.remotion.dev))
    ```bash
    npm run render
    ```
-   El archivo queda en `out/reel01.mp4`. La primera vez descarga un navegador interno (~100 MB).
+   El archivo queda en `out/reel01.mp4`. Para el reel 2: `npx remotion render Reel02Bio out/reel02.mp4`. La primera vez descarga un navegador interno (~100 MB).
 
 Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en el navegador.
 
 ## Antes de publicar
 - El video sale **sin música**, a propósito. Añade un audio en tendencia desde la app de IG o TikTok. Así evitas problemas de derechos de autor.
 - **CTA:** el video termina con "Comenta 2 y hago la parte 2". En el copy no pidas otra acción (guardar, seguir…): un solo CTA por video.
+
+## Reel 02: cómo está hecho
+- Video fuente: `public/reel02/bio-original.mp4`. Gancho vertical hasta 3.3 s; luego la toma horizontal se recorta para llenar la mitad inferior.
+- Tiempos de subtítulos y animaciones: `src/reels/reel02-subs.json` (generado con `tools/align.py` a partir del guion y las pausas del audio). Si algo va desfasado, se corrige el `start` de esa línea o palabra.
 
 ## Estructura
 - `src/theme.ts`: paleta, fuentes y zona segura. Todos los reels la reutilizan.
