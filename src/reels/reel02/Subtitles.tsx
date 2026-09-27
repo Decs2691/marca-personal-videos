@@ -77,7 +77,7 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
         // golpe) en el instante en que la pronuncias; así no quedan huecos.
         const k = frame - Math.round(w.t * FPS);
         const lit = k >= -1;
-        const pop = interpolate(k, [-1, 2, 6], [1, 1.14, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        const lift = interpolate(k, [-1, 2, 6], [0, -8, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
         const trailing = w.w.match(/[.,:;—…?!]+$/)?.[0] ?? "";
         const leading = w.w.match(/^[¿¡]+/)?.[0] ?? "";
         const word = w.w.slice(leading.length, w.w.length - trailing.length);
@@ -94,7 +94,7 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
                 textTransform: "uppercase",
                 color: lit ? SOFT_YELLOW : "#FFFFFF",
                 WebkitTextStroke: `${hook ? 5 : 4}px rgba(0,0,0,0.55)`,
-                transform: `scale(${pop})`,
+                transform: `translateY(${lift}px)`, // salto vertical: no invade los espacios
                 verticalAlign: "0.06em",
               }}
             >
