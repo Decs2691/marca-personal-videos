@@ -33,6 +33,7 @@ Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en 
 
 ## Reel 02: cómo está hecho
 - Video fuente: `public/reel02/bio-original.mp4`. Gancho vertical hasta 3.3 s; luego la toma horizontal se recorta para llenar la mitad inferior.
+- Efectos de sonido: `tools/sfx.py` los sintetiza (sin librerías externas) sobre palabras del audio y genera `public/reel02/sfx.wav`; volumen y lista de momentos se ajustan ahí.
 - Subtítulos y animaciones salen de lo que dices en el video: transcripción con Whisper small (`tools/reel02-asr-small.json`, tiempos por palabra) + correcciones a mano en `tools/build_subs.py`, que genera `src/reels/reel02-subs.json`. Para cambiar un texto o un corte de línea, edita `FIX`/`LINES` en ese script y vuelve a correrlo.
 
 ## Estructura
