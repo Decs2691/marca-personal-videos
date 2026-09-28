@@ -12,7 +12,7 @@ Reels para IG y TikTok hechos con código ([Remotion](https://www.remotion.dev))
 1. Instala Node.js LTS desde https://nodejs.org (el instalador .pkg), o con `brew install node` si usas Homebrew.
 2. Abre la **Terminal** y descarga el proyecto:
    ```bash
-   git clone https://github.com/<tu-usuario>/marca-personal-videos.git
+   git clone https://github.com/Decs2691/marca-personal-videos.git
    cd marca-personal-videos
    ```
 3. Instala las dependencias:
@@ -29,7 +29,10 @@ Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en 
 
 ## Antes de publicar
 - El video sale **sin música**, a propósito. Añade un audio en tendencia desde la app de IG o TikTok. Así evitas problemas de derechos de autor.
-- **CTA:** el video termina con "Comenta 2 y hago la parte 2". En el copy no pidas otra acción (guardar, seguir…): un solo CTA por video.
+- **CTA:** un solo CTA por video; en el copy no pidas otra acción distinta a la del video.
+
+## Editar un reel nuevo
+La estructura del reel 02 (gancho + pantalla dividida + subtítulos sincronizados + efectos) está documentada paso a paso en `.claude/skills/editar-reel/SKILL.md`, y las reglas de marca y del entorno en `CLAUDE.md`. Para transcribir un video: `tools/transcribe.sh <video> <salida.json>`.
 
 ## Reel 02: cómo está hecho
 - Video fuente: `public/reel02/bio-original.mp4`. Gancho vertical hasta 3.3 s; luego la toma horizontal se recorta para llenar la mitad inferior.
@@ -46,7 +49,7 @@ Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en 
 - Fondo crema `#F5F3EF` o negro `#000000`.
 - El turquesa `#2EC4B6` y el durazno `#F4A261` se usan como **bloque detrás de texto negro**. Nunca como color de texto sobre crema, porque no se lee (contraste ~2:1). Sobre negro sí pueden ser texto.
 - Respeta la zona segura: 220 px arriba, 480 px abajo y 140 px a la derecha (ahí está la interfaz de IG y TikTok). En `npm run studio`, la composición `Reel01Hooks-ZonasUI` muestra esas zonas en rojo para revisarlas.
-- Usa cortes secos: sin zooms, sin emojis y sin subtítulos palabra por palabra.
+- Usa cortes secos: sin zooms en las animaciones, sin emojis y sin subtítulos palabra por palabra. En tu toma real sí van 2–3 punch-in (acercamientos secos) en momentos clave.
 
 ## Licencia de Remotion
 Es gratis para personas y empresas de hasta 3 empleados. Si Col Ventures crece más allá de eso, revisa https://www.remotion.dev/license.
