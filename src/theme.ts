@@ -18,7 +18,7 @@ export const fonts = {
   sans: "Space Grotesk",
   // Subtítulos del reel 02: serif clásica + mayúsculas geométricas espaciadas.
   classic: "Cormorant Garamond",
-  display: "Montserrat",
+  display: "Marvin",
 };
 
 loadFont({
@@ -26,10 +26,12 @@ loadFont({
   url: staticFile("fonts/fraunces.woff2"),
   weight: "100 900",
 });
+// Marvin (versión demo que subiste). Solo tiene letras y números: los signos
+// de puntuación se dibujan con la serif.
 loadFont({
   family: fonts.display,
-  url: staticFile("fonts/montserrat.woff2"),
-  weight: "100 900",
+  url: staticFile("fonts/marvin-demo.otf"),
+  weight: "400",
 });
 loadFont({
   family: fonts.classic,

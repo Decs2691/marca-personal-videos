@@ -4,7 +4,7 @@ import { FPS, fonts } from "../../theme";
 import { lines } from "./timing";
 
 // Combinación tipográfica: la frase en serif clásica (Cormorant Garamond) y la
-// palabra clave en mayúsculas geométricas espaciadas (Montserrat), que se
+// palabra clave en mayúsculas espaciadas (Marvin), que se
 // enciende justo cuando la dices. Blanco + amarillo sobrio, borde suave y sombra difusa.
 const SOFT_YELLOW = "#F3E2A0";
 // Orden = prioridad cuando una línea tiene varias candidatas.
@@ -87,7 +87,7 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
               style={{
                 display: "inline-block",
                 fontFamily: fonts.display,
-                fontWeight: 800,
+                fontWeight: 400,
                 fontSize: serifSize * 0.74,
                 letterSpacing: "0.16em",
                 marginRight: "-0.16em",
@@ -98,7 +98,11 @@ export const Subtitles: React.FC<{ mode: "hook" | "split" }> = ({ mode }) => {
                 verticalAlign: "0.06em",
               }}
             >
-              {leading}
+              {leading && (
+                <span style={{ fontFamily: fonts.classic, fontWeight: 700, fontSize: serifSize / (serifSize * 0.74) + "em", letterSpacing: 0, color: "#FFFFFF" }}>
+                  {leading}
+                </span>
+              )}
               {word}
               {trailing && (
                 <span style={{ fontFamily: fonts.classic, fontWeight: 700, fontSize: serifSize / (serifSize * 0.74) + "em", letterSpacing: 0, color: "#FFFFFF" }}>

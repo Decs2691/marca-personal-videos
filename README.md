@@ -39,7 +39,7 @@ Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en 
 - `src/theme.ts`: paleta, fuentes y zona segura. Todos los reels la reutilizan.
 - `src/components/`: piezas reutilizables (`HookCard`, `Mark`, `Countdown`, `Scene`, `Typewriter`).
 - `src/reels/`: un archivo por reel.
-- `public/fonts/`: Fraunces, Space Grotesk, Cormorant Garamond y Montserrat (Google Fonts, licencia OFL). Van incluidas para que el render funcione sin internet. Los subtítulos del reel 02 combinan Cormorant (frase) + Montserrat en mayúsculas (palabra clave).
+- `public/fonts/`: Fraunces, Space Grotesk, Cormorant Garamond y Montserrat (Google Fonts, licencia OFL). Van incluidas para que el render funcione sin internet. Los subtítulos del reel 02 combinan Cormorant (frase) + Marvin en mayúsculas (palabra clave; `marvin-demo.otf`, versión demo: revisar su licencia antes de uso comercial).
 
 ## Reglas de diseño
 - Fondo crema `#F5F3EF` o negro `#000000`.
