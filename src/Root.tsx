@@ -3,6 +3,7 @@ import { AbsoluteFill, Composition } from "remotion";
 import { SafeZoneOverlay } from "./components/SafeZoneOverlay";
 import { REEL01_DURATION, Reel01Hooks } from "./reels/Reel01Hooks";
 import { REEL02_DURATION, Reel02Bio } from "./reels/Reel02Bio";
+import { REEL03_DURATION, Reel03MrBurger } from "./reels/Reel03MrBurger";
 import { FPS, HEIGHT, WIDTH } from "./theme";
 
 const withSafeZones = (Reel: React.FC): React.FC => {
@@ -46,6 +47,22 @@ export const Root: React.FC = () => (
       id="Reel02Bio-ZonasUI"
       component={withSafeZones(Reel02Bio)}
       durationInFrames={REEL02_DURATION}
+      fps={FPS}
+      width={WIDTH}
+      height={HEIGHT}
+    />
+    <Composition
+      id="Reel03MrBurger"
+      component={Reel03MrBurger}
+      durationInFrames={REEL03_DURATION}
+      fps={FPS}
+      width={WIDTH}
+      height={HEIGHT}
+    />
+    <Composition
+      id="Reel03MrBurger-ZonasUI"
+      component={withSafeZones(Reel03MrBurger)}
+      durationInFrames={REEL03_DURATION}
       fps={FPS}
       width={WIDTH}
       height={HEIGHT}

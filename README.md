@@ -7,6 +7,7 @@ Reels para IG y TikTok hechos con código ([Remotion](https://www.remotion.dev))
 |---|---|---|
 | `Reel01Hooks` | Qué es un hook + 3 tipos (01–03 de 20) | 34 s, 1080×1920 |
 | `Reel02Bio` | 3 cosas + 1 bonus para que tu perfil no pierda clientes (pantalla dividida) | 51 s, 1080×1920 |
+| `Reel03MrBurger` | Análisis del Instagram de Mr Burger: lo que hacen bien + 2 frentes a mejorar | 70 s, 1080×1920 |
 
 ## Cómo generarlo en tu Mac (solo la primera vez: pasos 1–3)
 1. Instala Node.js LTS desde https://nodejs.org (el instalador .pkg), o con `brew install node` si usas Homebrew.
@@ -23,7 +24,7 @@ Reels para IG y TikTok hechos con código ([Remotion](https://www.remotion.dev))
    ```bash
    npm run render
    ```
-   El archivo queda en `out/reel01.mp4`. Para el reel 2: `npx remotion render Reel02Bio out/reel02.mp4`. La primera vez descarga un navegador interno (~100 MB).
+   El archivo queda en `out/reel01.mp4`. Para el reel 2: `npx remotion render Reel02Bio out/reel02.mp4`. El reel 3 necesita antes su video editado: `python3 tools/edit_cuts.py public/reel03/mrburger-original.mp4 public/reel03/mrburger-edit.mp4 1.12 28.86-39.02` (requiere ffmpeg). La primera vez descarga un navegador interno (~100 MB).
 
 Para ver el video y ajustar cosas en vivo, ejecuta `npm run studio`. Se abre en el navegador.
 
