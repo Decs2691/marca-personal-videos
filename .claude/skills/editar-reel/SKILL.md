@@ -28,7 +28,8 @@ python3 tools/edit_cuts.py <original> public/reelNN/<nombre>-edit.mp4 1.12 [inic
 - Antes, propón a Dani qué tramos repetidos quitar. No recortes contenido sin su OK.
 - El `-edit.mp4` pesa ~100 MB y va en `.gitignore`: se regenera con el mismo comando.
 - A partir de aquí todo (transcripción, subtítulos, animación) se hace sobre el **video editado**.
-- **Si la toma es solo horizontal:** el gancho sale de un recorte vertical 9:16 centrado en la cara (ver `HookVideo` en el reel 03).
+- **Si la toma es solo horizontal:** pantalla dividida desde el primer frame. Dani prefirió esto a recortar su cara en vertical, porque se ve "muy grande". En el gancho, arriba va material visual (en el reel 03, clips de la comida del negocio) y abajo él.
+- **Grabaciones de pantalla de reels de terceros:** recorta la zona limpia (sin hora, botones, usuario ni barra de comentarios), quita el audio y no subas la grabación completa al repo, solo el clip recortado. Ver `food-hook.mp4` en el reel 03.
 
 ## 2. Transcribir (tiempos por palabra)
 ```bash
