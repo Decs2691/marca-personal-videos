@@ -4,6 +4,7 @@ import { SafeZoneOverlay } from "./components/SafeZoneOverlay";
 import { REEL01_DURATION, Reel01Hooks } from "./reels/Reel01Hooks";
 import { REEL02_DURATION, Reel02Bio } from "./reels/Reel02Bio";
 import { REEL03_DURATION, Reel03MrBurger } from "./reels/Reel03MrBurger";
+import { REEL03V3_DURATION, Reel03MrBurgerV3 } from "./reels/Reel03MrBurgerV3";
 import { FPS, HEIGHT, WIDTH } from "./theme";
 
 const withSafeZones = (Reel: React.FC): React.FC => {
@@ -63,6 +64,22 @@ export const Root: React.FC = () => (
       id="Reel03MrBurger-ZonasUI"
       component={withSafeZones(Reel03MrBurger)}
       durationInFrames={REEL03_DURATION}
+      fps={FPS}
+      width={WIDTH}
+      height={HEIGHT}
+    />
+    <Composition
+      id="Reel03MrBurgerV3"
+      component={Reel03MrBurgerV3}
+      durationInFrames={REEL03V3_DURATION}
+      fps={FPS}
+      width={WIDTH}
+      height={HEIGHT}
+    />
+    <Composition
+      id="Reel03MrBurgerV3-ZonasUI"
+      component={withSafeZones(Reel03MrBurgerV3)}
+      durationInFrames={REEL03V3_DURATION}
       fps={FPS}
       width={WIDTH}
       height={HEIGHT}

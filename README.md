@@ -7,7 +7,8 @@ Reels para IG y TikTok hechos con código ([Remotion](https://www.remotion.dev))
 |---|---|---|
 | `Reel01Hooks` | Qué es un hook + 3 tipos (01–03 de 20) | 34 s, 1080×1920 |
 | `Reel02Bio` | 3 cosas + 1 bonus para que tu perfil no pierda clientes (pantalla dividida) | 51 s, 1080×1920 |
-| `Reel03MrBurger` | Análisis del Instagram de Mr Burger: lo que hacen bien + 2 frentes a mejorar | 70 s, 1080×1920 |
+| `Reel03MrBurger` | Análisis de Mr Burger, v2 (**descartada**: 2 datos que el negocio corrigió) | 70 s, 1080×1920 |
+| `Reel03MrBurgerV3` | Análisis de Mr Burger, **versión vigente**: lo que hacen bien + 3 recomendaciones en voz en off | 49.5 s, 1080×1920 |
 
 ## Cómo generarlo en tu Mac (solo la primera vez: pasos 1–3)
 1. Instala Node.js LTS desde https://nodejs.org (el instalador .pkg), o con `brew install node` si usas Homebrew.

@@ -1,4 +1,4 @@
-# Reel 03, versión 3: pendiente de la voz en off de Dani
+# Reel 03, versión 3 (HECHA: `Reel03MrBurgerV3`)
 
 ## Por qué
 Mr Burger corrigió dos datos del video v2:

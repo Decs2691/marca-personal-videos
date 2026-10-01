@@ -43,7 +43,8 @@ const zoomAt = (frame: number) => {
   return 1;
 };
 
-const SplitVideo: React.FC = () => {
+// `startFrom` en frames del video editado (lo usa la v3 para el tramo "Así que recuerden…").
+export const SplitVideo: React.FC<{ startFrom?: number; muted?: boolean }> = ({ startFrom = 0, muted = false }) => {
   const frame = useCurrentFrame();
   const s = 960 / SRC_H;
   const w = SRC_W * s;
@@ -51,6 +52,8 @@ const SplitVideo: React.FC = () => {
     <div style={{ position: "absolute", left: 0, top: 960, width: 1080, height: 960, overflow: "hidden" }}>
       <OffthreadVideo
         src={SRC}
+        startFrom={startFrom}
+        muted={muted}
         style={{
           position: "absolute",
           width: w,
@@ -66,7 +69,7 @@ const SplitVideo: React.FC = () => {
 
 // Gancho (mitad de arriba): clips de su comida, recortados de una grabación de
 // pantalla de sus reels, sin la interfaz de Instagram ni su audio.
-const FoodHook: React.FC = () => (
+export const FoodHook: React.FC = () => (
   <AbsoluteFill style={{ height: 960, overflow: "hidden" }}>
     <OffthreadVideo src={staticFile("reel03/food-hook.mp4")} muted style={{ width: 1080, height: 960 }} />
     <HookTags />
