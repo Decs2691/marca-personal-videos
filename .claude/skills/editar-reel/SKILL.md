@@ -6,6 +6,7 @@ description: Edita un reel nuevo de Dani (@soydandandan) con la estructura del r
 # Editar un reel nuevo (estructura del reel 02)
 
 Referencias completas y funcionando:
+- **Reel 03 v3** (`src/reels/Reel03MrBurgerV3.tsx`): la versión vigente, con voz en off para corregir datos.
 - **Reel 03** (`src/reels/Reel03MrBurger.tsx` + `src/reels/reel03/`): usa las piezas reutilizables `src/components/SmartSubs.tsx`, `src/lib/subs.ts` (`makeTiming`) y `tools/sfxlib.py`. **Parte de este.**
 - **Reel 02:** el formato original, con toma vertical + horizontal.
 
@@ -30,6 +31,22 @@ python3 tools/edit_cuts.py <original> public/reelNN/<nombre>-edit.mp4 1.12 [inic
 - A partir de aquí todo (transcripción, subtítulos, animación) se hace sobre el **video editado**.
 - **Si la toma es solo horizontal:** pantalla dividida desde el primer frame. Dani prefirió esto a recortar su cara en vertical, porque se ve "muy grande". En el gancho, arriba va material visual (en el reel 03, clips de la comida del negocio) y abajo él.
 - **Grabaciones de pantalla de reels de terceros:** recorta la zona limpia (sin hora, botones, usuario ni barra de comentarios), quita el audio y no subas la grabación completa al repo, solo el clip recortado. Ver `food-hook.mp4` en el reel 03.
+
+## 1c. Corregir un tramo sin regrabar a cámara (voz en off)
+Lo usamos en el reel 03 v3, cuando el negocio corrigió datos y la barba de Dani ya había cambiado.
+- Dani graba **solo la voz**, con el mismo micrófono de solapa y en la misma habitación, dejando 2 s de silencio al inicio. Si repite frases, usa la última toma completa (ver los tiempos con `tools/transcribe.sh`).
+- `python3 tools/vo_prep.py <audio> <salida.wav> <video_editado> "<eq>" <inicio-fin> [...]`:
+  - recorta los tramos buenos y las pausas;
+  - ecualiza (compara antes el timbre por bandas contra el video; en la v3 fue +2 dB a 120 Hz, +3 dB a 220 Hz y +2 dB a 3.5 kHz);
+  - acelera a 1.12× e iguala los LUFS al video.
+- `tools/reel03v3_timeline.py`: une los tramos A (video), B (voz en off), C (video) y D (voz en off) en un solo audio y un JSON de tiempos. Luego se transcribe ese audio para los subtítulos.
+- **Imagen:**
+  - durante la voz en off: escenas a pantalla completa, con los subtítulos en y ≈ 1330;
+  - en los tramos de video: pantalla dividida, con los subtítulos en y = 960.
+
+  Referencia: `src/reels/Reel03MrBurgerV3.tsx` + `src/reels/reel03v3/`.
+- **Verificar los labios:** el desfase del tramo de video debe ser igual al del tramo A (~43 ms es el retardo normal del códec AAC).
+- **Antes de grabar:** que el negocio valide los datos. No afirmar nada que Dani no haya visto él mismo.
 
 ## 2. Transcribir (tiempos por palabra)
 ```bash
